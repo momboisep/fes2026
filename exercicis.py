@@ -11,7 +11,8 @@ print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies 
 
 ### Completa aquí
 
-print("--------------")
+print("Patricia")
+print("Sabadell")
 
 print("\nExercici 2: Mostra els tipus de dades de les variables següents:")
 print("Utilitza la comanda 'type()' per determinar el tipus de dades de cada variable.")
@@ -64,9 +65,11 @@ print("2. Arrodoneix el nombre amb round()")
 print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
 
-PI=None
-c= round(PI)
-print(c//2)
+import math
+pi=math.pi
+pi_redondeat= round(pi)
+resultat= pi_redondeat//2
+print(f"Resultat: {resultat}")
 
 print("\nExercici 6: Conversor de temperatura")
 print("Demana a l'usuari una temperatura en graus Celsius.")
@@ -75,8 +78,10 @@ print("Mostra els dos valors amb un missatge clar.")
 
 ### Completa aquí
 
-temp=input(print("Posa una temperatura en graus Celsius:"))
-print(f"La temperatura en Fahrenheit és: {float(temp) * 9/5 +32}")
+temp=input("Posa una temperatura en graus Celsius:")
+c= float(temp)
+f= (c * 9/5) + 32
+print(f"La temperatura en Fahrenheit és: {f}")
 
 
 print("\nExercici 7: Calculadora de propina")
@@ -86,7 +91,11 @@ print("Mostra els resultats amb 2 decimals.")
 
 ### Completa aquí
 
-propina=print("--------------")
+total,percentatge=input("Quin és el total del compte i el percentatge de propina?:").split()
+propina = float(total) * float (percentatge)/100
+resultat_final=float(total)+propina
+print(f"La propina és: {propina: .2f}")
+print(f"El resultat és: {resultat_final: .2f}")
 
 print("\nExercici 8: Validador de contrasenya simple")
 print("Demana una contrasenya a l'usuari.")
@@ -94,3 +103,8 @@ print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
 ### Completa aquí
+contrasenya= input("Posa una contrasenya: ")
+mesura= len(contrasenya)
+if mesura >= 8:
+    print("Contrasenya vàlida")
+print("Contrasenya no vàlida")
