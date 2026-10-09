@@ -25,5 +25,6 @@ print(f"La longitud és de {longitud}km i caldrien {segons} segons per transmetr
 # Mostra el cost total de la instal·lació.
 hores_feina=float(input("Posa el nombre d'hores de feina: "))
 preu= float(input("Posa el preu per hora d'una instal·lació de xarxa: "))
-cost= hores_feina*preu
+preu_material= float(input("Posa el preu material: "))
+cost= hores_feina*preu + preu_material
 print(f"El cost total és {cost}")
