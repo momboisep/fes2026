@@ -42,11 +42,13 @@ if consum <= 20:
     print("El consum és dins del límit")
 else:
     print (f"Has superat el límit, has consumit {consum - 20} GB")
+
 # Exercici 4: Diagnòstic d'una connexió de fibra
 # Demana si l'indicador LOS del terminal òptic està encès i si l'indicador
 # d'Internet del router està encès. Segons aquestes dues dades, indica si cal
 # revisar el cable de fibra, comprovar el servei del proveïdor o si la connexió
 # sembla funcionar correctament.
+
 
 # Exercici 5: Bateria d'un sistema d'alimentació ininterrompuda (SAI)
 # Demana el percentatge de bateria disponible al SAI que alimenta un armari
