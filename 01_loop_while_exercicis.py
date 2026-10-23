@@ -4,15 +4,34 @@
 
 # Exercici 1: Compte enrere
 # Imprimeix els números del 10 a l'1 fent servir un bucle while.
+num=10
+while num>=1:
+    print(num)
+    num=num-1
+
 
 # Exercici 2: Suma de números parells (while)
 # Calcula la suma dels números parells entre 1 i 20 (inclosos) fent servir un bucle while.
+num=20
+suma=0
+while num>=1:
+    print(num)
+    if num%2==0:
+        suma=suma+num
+        print(f"La suma és: {suma}")
+    num=num-1
 
 # Exercici 3: Factorial d'un número
 # Demana a l'usuari que introdueixi un número enter positiu.
 # Calcula el seu factorial fent servir un bucle while.
 # El factorial d'un número enter positiu és el producte de tots els números de l'1 fins a aquest número. Per exemple, el factorial de 5
 # 5! = 5 x 4 x 3 x 2 x 1 = 120.
+enter = int(input("Introdueix un número enter positiu:"))
+resultat=1
+while enter>=1:
+    resultat=resultat*enter
+    enter=enter-1
+print(resultat)
 
 # Exercici 4: Validació de contrasenya
 # Demana a l'usuari que introdueixi una contrasenya.
@@ -20,9 +39,21 @@
 # Fes servir un bucle while per continuar demanant la contrasenya fins que compleixi els requisits.
 # Si la contrasenya és vàlida, imprimeix "Contrasenya vàlida".
 
+contrasenya= input("Introdueix contrasenya (almenys 8 caracters):")
+while len(contrasenya)<8:
+    contrasenya= input("Contra no valida. Introdueix contrasenya (almenys 8 caracters):")
+print("Contrasenya valida")
+
 # Exercici 5: Taula de multiplicar
 # Demana a l'usuari que introdueixi un número.
 # Imprimeix la taula de multiplicar d'aquest número (de l'1 al 10) fent servir un bucle while.
+numero= int(input("Introdueix un numero:"))
+comptador=1
+resultat=0
+while comptador<=10:
+    resultat= comptador*numero
+    print(f"{numero}*{comptador}={resultat}")
+    comptador=comptador+1
 
 # Exercici 6: Números primers fins a N
 # Demana a l'usuari que introdueixi un número enter positiu N.
