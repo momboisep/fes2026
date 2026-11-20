@@ -4,6 +4,8 @@
 
 # Exercici 1: Imprimir números de l'1 al 10
 # Imprimeix els números de l'1 al 10 (inclosos) fent servir un bucle for i range().
+for num in range(1,11):
+    print(num)
 
 # Exercici 2: Imprimir números senars de l'1 al 20
 # Imprimeix tots els números senars entre 1 i 20 (inclosos) fent servir un bucle for i range().
